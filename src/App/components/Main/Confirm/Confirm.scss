@@ -1,0 +1,67 @@
+.Confirm {
+  display: flex;
+  justify-content: center;
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__stats {
+    display: flex;
+    justify-content: space-between;
+    color: #D8D8D8;
+    padding: 8px 2px;
+    > :last-child {
+      margin-left: 10px;
+    }
+    &__link {
+      text-decoration: underline;
+      color: rgba($color: #D8D8D8, $alpha: 0.75);
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.Confirm__button {
+  height: 64px;
+  color: #fff;
+  min-width: 320px;
+  border: none;
+  font-size: 26px;
+  line-height: 28px;
+  border-radius: 10px;
+  cursor: pointer;
+  &:hover:not(:disabled) {
+    background-color: #001529;
+  }
+  &:disabled {
+    cursor: not-allowed;
+  }
+  &:active,
+  &:focus {
+    outline: none;
+  }
+  > img {
+    height: 30px;
+  }
+  &--idle {
+    background: rgba(0, 0, 0, 0.25);
+  }
+  &--success {
+    background:#123F85;
+  }
+  &--failed {
+    background:rgba(208, 2, 27, 0.4);
+  }
+  &--loading {
+    background:#123F85;
+  }
+  &--resultSuccess {
+    background:#4CAF50;
+  }
+  &--resultFailed {
+    background:#c62828;
+  }
+}

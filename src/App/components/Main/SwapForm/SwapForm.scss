@@ -1,0 +1,64 @@
+.SwapForm {
+  label {
+    color: #ffffff;
+    font-size: 16px;
+    padding-left: 11px;
+  }
+}
+
+.SwapForm__amountSelect {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.SwapForm__input {
+  margin-bottom: 0;
+  input[type=number]::-webkit-inner-spin-button, 
+  input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+  }
+  .ant-input-affix-wrapper {
+    background: none;
+    border: none;
+    color: #fff;
+    &:hover,
+    &:focus {
+     border: none; 
+     background: none;
+    }
+    > input.ant-input {
+      background: none;
+      color: #fff;
+      &::placeholder {
+        color: #fff;
+      }
+      &:focus {
+        &::placeholder {
+          color: rgba($color: #fff, $alpha: 0.45);
+        }
+      }
+    }
+    .ant-input-suffix {
+      text-transform: uppercase;
+    }
+    &.ant-input-affix-wrapper-lg { 
+      padding: 0;
+      font-size: 18px;
+      > input.ant-input {
+        font-size: 26px;
+        line-height: 36px;
+        &:focus {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
+
+.SwapForm__divider {
+  margin: 2px 0;
+  border-top: 2px solid #000;
+}

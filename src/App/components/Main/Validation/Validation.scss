@@ -1,0 +1,12 @@
+.Validation {
+  &__error {
+    background: rgba($color: #D0021B, $alpha: 0.4);
+    border: 2px solid rgba($color: #D0021B, $alpha: 0.5);
+    border-radius: 5px;
+    text-align: center;
+    .ant-alert-message {
+      color: #fff;
+      font-size: 17px;
+    }
+  }
+}

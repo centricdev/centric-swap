@@ -1,0 +1,18 @@
+.ellipsis_box {
+  max-width: 100%;
+  display: inline-flex;
+  flex-wrap: nowrap;
+}
+
+.ellipsis_box_start {
+  flex: 0 1 auto;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.ellipsis_box_end {
+  flex: 1 0 auto;
+  white-space: nowrap;
+  margin-left: -1px;
+}

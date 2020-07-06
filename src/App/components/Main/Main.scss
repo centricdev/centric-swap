@@ -1,0 +1,66 @@
+.Main {
+  display: flex;
+  justify-content: center;
+}
+
+.Main__column {
+  min-width: auto;
+  &__swap {
+    display: none;
+    justify-content: center;
+    align-items: flex-start;
+    .screen-md & {
+      display: flex;
+      padding-top: 38px;
+    }
+  }
+  &--receive {
+    display: none;
+    .screen-md & {
+      display: block;
+    }
+  }
+  .ant-form-item:not(.SwapForm__input):not(.SwapForm__amountSelect) {
+    margin-bottom: 8px;
+  }
+  &--input {
+    margin: 2vh 0 2vh;
+    padding-top: 2px !important;
+    .screen-md & {
+      margin: 0;
+    }
+  }
+}
+
+.Form {
+  width: 100%;
+}
+
+.SwapForm {
+  margin: 5vh auto 20px;
+  .screen-md & {
+    margin: 6vh auto 22px;
+  }
+}
+
+.Summary {
+  margin: 22px auto 4vh;
+  .screen-md & {
+    margin: 22px auto 8vh;
+  }
+}
+
+.Confirm {
+  margin: 2vh auto 22px;
+  .screen-md & {
+    margin: 6vh auto 22px;
+  }
+}
+
+.Validation {
+  margin: 20px auto;
+  min-height: 46px;
+  .screen-md & {
+    margin: 22px auto;
+  }
+}
